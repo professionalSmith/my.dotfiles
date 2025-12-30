@@ -55,7 +55,7 @@
     attributesfile = ~/.gitattributes
     autocrlf = input
     editor = micro
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore
     precomposeUnicode = true
 	pager = diff-so-fancy | less --tabs=4 -RFX
     filemode = false
