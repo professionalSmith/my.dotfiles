@@ -38,6 +38,7 @@ __pypackages__/
 .hypothesis/
 .idea
 .idea/
+.ignored
 .installed.cfg
 .ipynb_checkpoints
 .lock-wscript
