@@ -1,0 +1,52 @@
+commitizen:
+  allow_abort: true
+  allowed_prefixes:
+    - break
+    - build
+    - chore
+    - ci
+    - docs
+    - feat
+    - fix
+    - initial commit
+    - perf
+    - refactor
+    - revert
+    - squash
+    - style
+    - test
+  bump_map:
+    break: MAJOR
+    build: PATCH
+    chore: PATCH
+    ci: PATCH
+    docs: PATCH
+    feat: MINOR
+    fix: PATCH
+    perf: PATCH
+    refactor: PATCH
+    revert: PATCH
+    style: PATCH
+    test: PATCH
+  bump_message: 'bump: $current_version → $new_version'
+  change_type_map:
+    break: Breaking Changes
+    build: Build Changes
+    chore: Chore Changes
+    ci: CI Changes
+    docs: Documentation Changes
+    feat: New Features
+    fix: Bug Fixes
+    perf: Performance Improvements
+    refactor: Code Refactoring
+    revert: Reverts
+    style: Style Changes
+    test: Test Changes
+  changelog_incremental: true
+  name: cz_conventional_commits
+  retry_after_failure: false
+  tag_format: v$major.$minor.$patch$prerelease
+  update_changelog_on_bump: true
+  version: 0.0.0
+  version_provider: commitizen
+  version_scheme: semver2
