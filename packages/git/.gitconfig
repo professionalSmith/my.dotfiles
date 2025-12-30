@@ -36,12 +36,9 @@
     helper = osxkeychain
     UseHttpPath = true
 [diff]
-    guitool = meld
-    tool = icdiff
+    tool = meld
 [difftool]
     prompt = false
-[difftool "icdiff"]
-    cmd = icdiff $LOCAL $REMOTE
 [difftool "meld"]
     cmd = meld $LOCAL $REMOTE
 [init]
