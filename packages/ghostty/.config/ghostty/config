@@ -1,0 +1,12 @@
+# This is the configuration file for Ghostty.
+# https://ghostty.org/docs/config
+# https://ghostty.org/docs/config/reference
+#
+# Ghostty Commands
+# ghostty --help
+
+# font-family = Monaco
+font-size = 21
+theme = 3024 Night
+background = 000000
+foreground = 89F336
