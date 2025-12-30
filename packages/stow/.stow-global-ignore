@@ -1,0 +1,10 @@
+-r ~/.gitignore_global
+
+.DS_Store
+.git
+.gitignore
+.stow-local-ignore
+.stowrc
+.*\.example
+^/@.*
+README.*
