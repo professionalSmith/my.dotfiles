@@ -24,32 +24,6 @@
 	spellcheck = false
 	startupmode = list
 	tabwidth = 4
-[color]
-    branch = auto
-    diff = auto
-    interactive = auto
-    pager = true
-    status = auto
-    ui = true
-[color "branch"]
-    remote = yellow
-[color "diff"]
-    commit = yellow bold
-    frag = magenta bold
-    func = 146 bold
-    meta = 11
-    new = green bold
-    old = red bold
-    whitespace = red reverse
-[color "diff-highlight"]
-	newHighlight = green bold 22
-	newNormal = green bold
-	oldHighlight = red bold 52
-	oldNormal = red bold
-[color "status"]
-    added = white
-    changed = red bold
-    untracked = magenta bold
 [commit]
 	template = ~/.gitmessage
 [core]
