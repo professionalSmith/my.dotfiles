@@ -5,8 +5,14 @@
 # Ghostty Commands
 # ghostty --help
 
-# font-family = Monaco
-font-size = 21
-theme = 3024 Night
 background = 000000
+font-family = Courier New Bold
+font-size = 24
 foreground = 89F336
+fullscreen = true
+macos-icon = custom-style
+macos-icon-ghost-color = 89F336
+macos-icon-screen-color = 000000,000000
+quit-after-last-window-closed = true
+theme = 3024 Night
+title = Terminal
