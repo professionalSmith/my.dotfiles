@@ -36,11 +36,5 @@ HIST_STAMPS=""
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # Consider plugins: terraform, vagrant
-
-plugins=(aws gh extract helm kubectl minikube nvm uv)
 source $ZSH/oh-my-zsh.sh
-eval "$(direnv hook zsh)"
-
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-zstyle ':completion:*:*:make:*' tag-order 'targets'
-autoload -U compinit && compinit
+plugins=(aws gh extract helm kubectl minikube nvm uv)
