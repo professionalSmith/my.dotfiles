@@ -1,0 +1,3 @@
+add-editorconfg() {
+    cp ~/.editorconfig .
+}
