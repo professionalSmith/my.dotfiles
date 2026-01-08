@@ -1,5 +1,6 @@
-alias cat=bat
-alias cls='printf "\ec\e[3J"'
+# Independent Aliases
+alias cat="bat --style=plain --paging=never --style=numbers --theme ansi"
+alias cls="printf '\ec\e[3J'"
 alias dotfiles="code ~/my.dotfiles"
 alias grep="grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox,.idea}"
 alias ls="eza -l --header --git --icons"
