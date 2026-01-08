@@ -15,3 +15,6 @@ max_line_length = off
 
 [COMMIT_EDITMSG]
 max_line_length = 72
+
+[*.yaml]
+indent_size = 2
