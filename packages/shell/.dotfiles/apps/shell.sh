@@ -5,6 +5,7 @@ alias dotfiles="code ~/my.dotfiles"
 alias grep="grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox,.idea}"
 alias ls="eza  --long --bytes --no-time --icons --header --git --group-directories-first --smart-group --no-user"
 alias lsa="ls -Ap"
+alias playbooks="code ~/my.playbooks"
 alias reload="exec $SHELL"
 alias vars="env | sort"
 
