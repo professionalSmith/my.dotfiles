@@ -2,8 +2,8 @@ alias cat=bat
 alias cls='printf "\ec\e[3J"'
 alias dotfiles="code ~/my.dotfiles"
 alias grep="grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox,.idea}"
-alias ls="ls -lp --color=auto"
-alias lsa="ls -lAp --color=auto"
+alias ls="eza -l --header --git --icons"
+alias lsa="ls -Ap"
 alias reload="exec $SHELL"
 alias vars="env | sort"
 
