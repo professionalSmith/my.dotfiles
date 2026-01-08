@@ -42,6 +42,26 @@
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*.md",
+                "cmd": "prettier -w --prose-wrap=always ${file}"
+            },
+            {
+                "match": ".*.sh",
+                "cmd": "shfmt --write ${file}"
+            },
+            {
+                "match": ".*\\.(yml|yaml)",
+                "cmd": "prettier -w ${file}"
+            },
+            {
+                "match": ".*\\.(json|jsonnet)",
+                "cmd": "prettier -w ${file}"
+            }
+        ]
+    },
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.enabled": false,
     "[jsonnet]": {
