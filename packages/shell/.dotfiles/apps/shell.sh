@@ -8,17 +8,10 @@ alias lsa="ls -Ap"
 alias reload="exec $SHELL"
 alias vars="env | sort"
 
+# Functions
 search() {
     local directory="${2:-.}"
     grep -n -R $1 "$directory"
 }
 
-dailytrash() {
-    folder_current="$(pwd)"
-    folder_date="$(date +'%Y-%b-%d-%H-%M')"
-    folder="$folder_current/$folder_date"
-    destination="$HOME/.trash$folder"
-    mkdir -p $destination
-    echo "Trashing files to: $destination"
-    mv "$@" $destination
 }
