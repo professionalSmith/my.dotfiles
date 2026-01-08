@@ -9,6 +9,7 @@
     graph-short = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     mt = mergetool --gui
     peak = ! git log --oneline | column -t -s ":" | bat --paging=never --theme ansi
+    prune = fetch --prune
     sd = "!f() { read -p 'Drop all? [y/n]: ' d; case $d in y) git stash drop;; n) echo 'aborting';; esac; }; f"
     sdi = "!f() { git stash drop stash@{$1}; }; f"
 [cola]
