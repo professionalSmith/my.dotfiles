@@ -294,3 +294,7 @@ wheels/
 yarn-debug.log*
 yarn-error.log*
 zsdoc/data
+
+
+# Project Specific Ignores
+packages/secrets
