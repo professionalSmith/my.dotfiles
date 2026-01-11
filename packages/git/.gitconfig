@@ -8,15 +8,10 @@
     graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     graph-short = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     mt = mergetool --gui
-    peak = log --oneline
-    sai = "!f() { git stash apply stash@{$1}; }; f"
-    save = stash --all
-    sb = "!f() { git stash branch $1; }; f"
+    peak = ! git log --oneline | column -t -s ":" | bat --paging=never --theme ansi
+    prune = fetch --prune
     sd = "!f() { read -p 'Drop all? [y/n]: ' d; case $d in y) git stash drop;; n) echo 'aborting';; esac; }; f"
     sdi = "!f() { git stash drop stash@{$1}; }; f"
-    sl = stash list
-    sp = stash pop
-    spi = "!f() { git stash pop stash@{$1}; }; f"
 [cola]
 	autoloadcommittemplate = true
 	spellcheck = false

@@ -1,3 +1,30 @@
+## v0.2.0 (2026-01-08)
+
+### Bug Fixes
+
+- **shell**: remove unused function
+- **shell**: improved ls command readability
+- **git**: remove unused aliases
+
+### Code Refactoring
+
+- **shell**: factor out shell packages
+
+### New Features
+
+- **shell**: improved env command readability
+- **shell**: added alias for opening playbooks
+- **shell**: improve cat readability
+- **vscode**: run command on file save
+- **markdown**: wrap text at 80 columns
+- **git**: prune merged remote branches
+- **git**: improve git log readability
+- **editors**: configure YAML settings
+- **editors**: add .editorconfig file to projects
+- **secrets**: create package for secrets
+- **shell**: integrate ls command replacement
+- **terminal**: personalize ghostty terminal
+
 ## v0.1.0 (2025-12-30)
 
 ### Bug Fixes
