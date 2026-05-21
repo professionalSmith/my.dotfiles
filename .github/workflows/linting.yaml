@@ -1,0 +1,21 @@
+name: Deploy packages.
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "packages/**"
+  workflow_dispatch:
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  runner-images-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Verify code cloned
+        run: ls -la
